@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  --bg-color: rgba( 255,255,255,.75 );
+  background-image: linear-gradient( 0deg, var( --bg-color ), var( --bg-color ) ),url('../src/assets/bg.jpg');
+
+}
+
+/* .loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pokeball-loader {
+  background: #fff;
+  border: 8px solid #000;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.pokeball-loader:before,
+.pokeball-loader:after {
+  content: '';
+  background: #000;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+
+.pokeball-loader:before {
+  top: 0;
+  left: 0;
+}
+
+.pokeball-loader:after {
+  bottom: 0;
+  right: 0;
+}
+
+/* Add animation for rotation */
+/* @keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* .pokeball-loader {
+  animation: rotate 1s infinite linear;
+} */
+
+.pokeball-loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pokeball-loader {
+  width: 100px; /* ajusta el tamaño según tus necesidades */
+  height: 100px; /* ajusta el tamaño según tus necesidades */
+  background: url('../src/assets/pokeball-loader.png') no-repeat center center;
+  background-size: contain;
+  animation: spin 1s infinite linear;
+}
+
+/* Agrega animación para la rotación */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
