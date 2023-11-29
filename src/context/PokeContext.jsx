@@ -17,6 +17,7 @@ export const PokeProvider = ({ children }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const [nombresFiltrados, setNombresFiltrados] = useState([]);
   const [searchTerms, setSearchTerms] = useState("");
+  const [searchFilter, setSearchFilter] = useState("");
   const [open, setOpen] = useState(false);
 
   const itemsPerPage = 15;
@@ -28,7 +29,7 @@ export const PokeProvider = ({ children }) => {
       );
       const data = await response.json();
       setTotalPages(Math.round(data.count / itemsPerPage));
-      setPokeName(data.results);
+      setPokeName(data.results.map((poke) => poke.name));
     } catch (error) {
       console.error("Error fetching Pokemon data:", error);
     }
@@ -36,7 +37,6 @@ export const PokeProvider = ({ children }) => {
 
   const fetchPokemons = async () => {
     try {
-      // setIsLoading(true);
       setIsLoading((prev) => ({ ...prev, cards: true }));
       const baseURL = "https://pokeapi.co/api/v2/";
 
@@ -61,18 +61,17 @@ export const PokeProvider = ({ children }) => {
   };
 
   const getPokeDetails = async (name) => {
+    setOpen(false);
     try {
-      // setIsLoading(true);
       setIsLoading((prev) => ({ ...prev, stats: true, loader: true }));
-
+      setOpen(true);
       const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
       const data = await res.json();
 
       setPokemonSearch(data);
-
       // valida si existe termino buscador para poner
       // en true la bandera
-      if (searchTerms) {
+      if (name.includes(searchTerms)) {
         setIsFlag(true);
       }
     } catch (error) {
@@ -85,7 +84,8 @@ export const PokeProvider = ({ children }) => {
   const handlePokeDetails = (name) => {
     getPokeDetails(name);
     setNombresFiltrados([]);
-    setOpen(true);
+    setSearchTerms(name);
+    setSearchFilter(name);
   };
 
   useEffect(() => {
@@ -110,6 +110,7 @@ export const PokeProvider = ({ children }) => {
         open,
         currentPage,
         itemsPerPage,
+        searchFilter,
         setCurrentPage,
         setOpen,
         setIsFlag,
@@ -120,6 +121,7 @@ export const PokeProvider = ({ children }) => {
         setNombresFiltrados,
         setSearchTerms,
         setPokemonSearch,
+        setSearchFilter,
       }}
     >
       {children}

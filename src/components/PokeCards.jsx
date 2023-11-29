@@ -10,10 +10,12 @@ const PokeCards = () => {
     pokemonList,
     pokemonSearch,
     isFlag,
-    searchTerms,
+    setSearchFilter,
+    searchFilter,
     isLoading,
     setIsFlag,
     setSearchTerms,
+    pokeName,
   } = usePoke();
 
   const { cards } = isLoading;
@@ -31,7 +33,7 @@ const PokeCards = () => {
           className="w-full"
         >
           {/* Cuando solo es un resultado, muestra solo 1 tarjeta */}
-          {isFlag && searchTerms ? (
+          {isFlag && pokeName.includes(searchFilter) ? (
             <motion.div
               variants={fadeIn("right", 0.5)}
               initial="hidden"
@@ -42,7 +44,9 @@ const PokeCards = () => {
               <div className="flex gap-2 items-center text-blue-500 font-bold mb-5 ">
                 <IoArrowBack
                   className="text-3xl hover:scale-110 cursor-pointer"
-                  onClick={() => (setIsFlag(false), setSearchTerms(""))}
+                  onClick={() => (
+                    setIsFlag(false), setSearchTerms(""), setSearchFilter("")
+                  )}
                 />
                 <h1>Back</h1>
               </div>

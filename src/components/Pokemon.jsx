@@ -9,7 +9,7 @@ import pokeball from "../assets/pokeball.png";
 import PokeDescription from "./PokeDescription";
 
 const Pokemon = ({ poke }) => {
-  const { getPokeDetails, setOpen } = usePoke();
+  const { getPokeDetails } = usePoke();
 
   return (
     <motion.div
@@ -21,7 +21,7 @@ const Pokemon = ({ poke }) => {
         typeColors,
         "rounded-lg py-10 px-5 flex flex-row gap-1 justify-around items-center cursor-pointer bg-no-repeat bg-right-top shadow-md relative z-0"
       )}
-      onClick={() => (getPokeDetails(poke.name), setOpen(true))}
+      onClick={() => getPokeDetails(poke.name)}
     >
       <PokeDescription poke={poke} />
 

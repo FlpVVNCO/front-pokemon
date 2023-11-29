@@ -8,10 +8,9 @@ const PokeAutocomplete = () => {
     searchTerms,
     setSearchTerms,
     handlePokeDetails,
-    setIsFlag,
   } = usePoke();
 
-  const name = pokeName.map((poke) => poke.name);
+  // const name = pokeName.map((poke) => poke.name);
 
   const handleInputChange = (event) => {
     const filtro = event.target.value.toLowerCase();
@@ -20,12 +19,11 @@ const PokeAutocomplete = () => {
     // Verificar si el input está vacío
     if (filtro === "") {
       setNombresFiltrados([]);
-      setIsFlag(false);
       return;
     }
 
     // Filtrar nombres que coincidan con la entrada del usuario
-    const nombresFiltrados = name.filter((nombre) =>
+    const nombresFiltrados = pokeName.filter((nombre) =>
       nombre.toLowerCase().includes(filtro)
     );
 
