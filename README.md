@@ -1,4 +1,4 @@
-# Proyecto PokeApi para DeFontana
+# Proyecto PokeApi para Defontana
 
 Proyecto desarrollado con React + Tailwind + NextUI + FramerMotion.
 El objetivo era realizar un buscador de pokemones con autocompletado, que también paginara los pokemones y mostrara los detalles de cada uno.
