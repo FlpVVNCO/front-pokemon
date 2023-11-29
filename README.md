@@ -70,13 +70,10 @@ Como usuario interesado en explorar la lista completa de Pokémons, quiero poder
 - Historia de Usuario 2: Detalles de Pokémon Seleccionado<br>
 Como usuario interesado en obtener información detallada sobre un Pokémon, quiero poder seleccionar un Pokémon de la tabla y ver sus detalles en un contenedor a la derecha.
 
-- Historia de Usuario 3: Implementación con Angular o React<br>
-Como desarrollador, quiero implementar el proyecto utilizando Angular o React y cumplir con ciertos requisitos específicos para cada tecnología.
-
-- Historia de Usuario 4: Versión Mobile del Sitio (Responsive)<br>
+- Historia de Usuario 3: Versión Mobile del Sitio (Responsive)<br>
 Como usuario que accede desde dispositivos móviles, quiero poder explorar el sitio de manera cómoda y amigable en mi dispositivo, por lo que necesito que el sitio sea responsive.
 
-- Historia de Usuario 5: Tabla Resumen de Pokémon por Letra<br>
+- Historia de Usuario 4: Tabla Resumen de Pokémon por Letra<br>
 Como usuario, quiero poder ver una tabla resumen que indique la cantidad de Pokémons que comienzan con cada letra del abecedario, para obtener una visión general de la distribución alfabética.
 
 ## Comentarios
