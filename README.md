@@ -24,24 +24,24 @@ Antes de comenzar, asegúrate de tener instalado [Node.js](https://nodejs.org/) 
 1. Clona este repositorio a tu máquina local:
 
    ```
-      git clone https://github.com/FlpVVNCO/front-pokemon/
+    git clone https://github.com/FlpVVNCO/front-pokemon/
    ```
    
 2. Ve al directorio del proyecto:
 
    ```
-      cd front-pokemon
+    cd front-pokemon
    ```
 3. Instala las dependencias utilizando npm:
 
-    ```
-      npm install
-    ```
+   ```
+    npm install
+   ```
 
 4. Inicia el servidor de desarrollo:
 
-    ```
-      npm run dev
+   ```
+    npm run dev
    ```
 
 _El proyecto se ejecutará en `http://localhost:5173`. Puedes acceder a él desde tu navegador._
