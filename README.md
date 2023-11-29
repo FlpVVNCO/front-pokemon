@@ -67,16 +67,16 @@ A continuación, se enumeran las principales dependencias utilizadas en este pro
 - Historia de Usuario 1: Explorar y Filtrar Pokemons
 Como usuario interesado en explorar la lista completa de Pokémons, quiero poder ver una tabla paginada que se conecte a la API de Pokémons (https://pokeapi.co/api/v2/pokemon) y me permita filtrar Pokémons por su nombre. Además, deseo que el filtro de texto tenga autocompletado para facilitar la búsqueda.
 
--Historia de Usuario 2: Detalles de Pokémon Seleccionado
+- Historia de Usuario 2: Detalles de Pokémon Seleccionado
 Como usuario interesado en obtener información detallada sobre un Pokémon, quiero poder seleccionar un Pokémon de la tabla y ver sus detalles en un contenedor a la derecha.
 
--Historia de Usuario 3: Implementación con Angular o React
+- Historia de Usuario 3: Implementación con Angular o React
 Como desarrollador, quiero implementar el proyecto utilizando Angular o React y cumplir con ciertos requisitos específicos para cada tecnología.
 
--Historia de Usuario 4: Versión Mobile del Sitio (Responsive)
+- Historia de Usuario 4: Versión Mobile del Sitio (Responsive)
 Como usuario que accede desde dispositivos móviles, quiero poder explorar el sitio de manera cómoda y amigable en mi dispositivo, por lo que necesito que el sitio sea responsive.
 
--Historia de Usuario 5: Tabla Resumen de Pokémon por Letra
+- Historia de Usuario 5: Tabla Resumen de Pokémon por Letra
 Como usuario, quiero poder ver una tabla resumen que indique la cantidad de Pokémons que comienzan con cada letra del abecedario, para obtener una visión general de la distribución alfabética.
 
 ## Comentarios
