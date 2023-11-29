@@ -81,5 +81,5 @@ Como usuario, quiero poder ver una tabla resumen que indique la cantidad de Pok√
 
 ## Comentarios
 
-- Alguna duda/error que se presente pueden contactarme a mi [Correo](felipevivanco05@gmail.com)
+- Alguna duda/error que se presente pueden contactarme a mi correo: felipevivanco05@gmail.com
 
